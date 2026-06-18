@@ -1,4 +1,4 @@
-## 0.0.
+## 0.0.4
 
 - Added customization for Bar Chart horizontal lines width
 
