@@ -99,7 +99,7 @@ class BarChartCustomPainter extends CustomPainter {
       // }
       double percent = (value - yAxisMin) / (yAxisMax - yAxisMin);
       double heightFromTop = percent * usableHeight;
-      double heightFromBottom = usableHeight - heightFromTop;
+      // double heightFromBottom = usableHeight - heightFromTop;
       return heightFromTop;
     }
 

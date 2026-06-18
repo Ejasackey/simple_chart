@@ -1,7 +1,8 @@
 name: simple_chart
-description: "A new Flutter package project."
+description: "Making it easy and simple to add Line and Bar charts to your projects."
 version: 0.0.1
-homepage:
+homepage: https://github.com/Ejasackey/simple_chart
+repository: https://github.com/Ejasackey/simple_chart
 
 environment:
   sdk: ^3.12.1
