@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_chart/simple_chart.dart';
+import 'package:simple_chart/quick_chart.dart';
 
 void main() {
   runApp(const MyApp());

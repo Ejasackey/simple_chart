@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:simple_chart/src/chart_helper_functions.dart';
-import 'package:simple_chart/src/extensions/double_extension.dart';
+import 'package:quick_chart/src/chart_helper_functions.dart';
+import 'package:quick_chart/src/extensions/double_extension.dart';
 
 enum XLabelAlignment {
   showAllCentered,
