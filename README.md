@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-# Simple Chart
+# Quick Chart
 
 A simple package for adding Line and Bar charts to you projects hassle free.
 
