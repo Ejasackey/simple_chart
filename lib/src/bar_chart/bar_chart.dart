@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quick_chart/src/bar_chart/bar_chart_custom_painter.dart';
+import 'package:quick_chart/src/enums.dart';
 
 // ignore: must_be_immutable
 class BarChart extends StatefulWidget {

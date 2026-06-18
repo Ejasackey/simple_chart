@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:quick_chart/src/chart_helper_functions.dart';
+import 'package:quick_chart/src/enums.dart';
 import 'package:quick_chart/src/extensions/double_extension.dart';
 
-enum XLabelAlignment {
-  showAllCentered,
-  showAllWithFirstAndLastInLine,
-  showFirstAndLast,
-}
-
-enum UnitAlignment { left, right }
 
 class LineChartCustomPainter extends CustomPainter {
   Offset? touchPosition;

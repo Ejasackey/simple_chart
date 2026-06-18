@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quick_chart/src/enums.dart';
 import 'package:quick_chart/src/line_chart/line_chart_custom_painter.dart';
 
 // ignore: must_be_immutable

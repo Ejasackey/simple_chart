@@ -2,15 +2,10 @@ import 'dart:developer' as dev;
 
 import 'package:flutter/material.dart';
 import 'package:quick_chart/src/chart_helper_functions.dart';
+import 'package:quick_chart/src/enums.dart';
 import 'package:quick_chart/src/extensions/double_extension.dart';
 
-enum XLabelAlignment {
-  showAllCentered,
-  showFirstAndLast,
-  showAllWithFirstAndLastInLine,
-}
 
-enum UnitAlignment { left, right }
 
 class BarChartCustomPainter extends CustomPainter {
   Offset? touchPosition;
