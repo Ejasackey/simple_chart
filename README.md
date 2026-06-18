@@ -22,10 +22,10 @@ A simple package for adding Line and Bar charts to you projects hassle free.
 
 ## Simple Use
 
-1. Import `simple_chart.dart`
+1. Import `quick_chart.dart`
 
 ```dart
-import "package:simple_chart/simple_chart.dart";
+import "package:quick_chart/quick_chart.dart";
 ```
 
 2. Add widget
