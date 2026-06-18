@@ -70,6 +70,15 @@ class BarChart extends StatefulWidget {
   /// color of selected bar
   Color selectedBarColor;
 
+  /// width of horizontal lines
+  double hLineWidth;
+
+  /// Draw horizontal lines
+  bool drawHLines;
+
+  ///Draw vertical lines
+  bool drawVLines;
+
   BarChart({
     super.key,
     this.yLabelSpacing = 6,
@@ -93,6 +102,9 @@ class BarChart extends StatefulWidget {
     this.barColor = Colors.blue,
     this.negativeBarColor = Colors.red,
     this.selectedBarColor = Colors.amber,
+    this.hLineWidth = .08,
+    this.drawHLines = true,
+    this.drawVLines = false,
   });
 
   @override
@@ -134,6 +146,9 @@ class _BarChartState extends State<BarChart> {
             barColor: widget.barColor,
             negativeBarColor: widget.negativeBarColor,
             selectedBarColor: widget.selectedBarColor,
+            hLinesWeight: widget.hLineWidth,
+            drawHorizontalLines: widget.drawHLines,
+            drawVerticalLines: widget.drawVLines,
           ),
           willChange: true,
         ),

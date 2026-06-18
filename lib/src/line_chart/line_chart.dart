@@ -88,6 +88,12 @@ class LineChart extends StatefulWidget {
   /// TextStyle for the y labels
   TextStyle xLabelStyle;
 
+  /// Draw horizontal lines
+  bool drawHLines;
+
+  ///Draw vertical lines
+  bool drawVLines;
+
   LineChart({
     super.key,
     this.yLabelSpacing = 6,
@@ -117,6 +123,8 @@ class LineChart extends StatefulWidget {
     this.hLineWidth = .08,
     this.yLabelStyle = const TextStyle(),
     this.xLabelStyle = const TextStyle(),
+    this.drawHLines = true,
+    this.drawVLines = false,
   });
 
   @override
@@ -178,6 +186,8 @@ class _LineChartState extends State<LineChart> {
             lineWidth: widget.lineWidth,
             yLabelStyle: widget.yLabelStyle,
             xLabelStyle: widget.xLabelStyle,
+            drawHorizontalLines: widget.drawHLines,
+            drawVerticalLines: widget.drawVLines,
           ),
           willChange: true,
         ),

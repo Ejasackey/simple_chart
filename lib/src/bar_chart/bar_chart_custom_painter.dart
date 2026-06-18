@@ -5,8 +5,6 @@ import 'package:quick_chart/src/chart_helper_functions.dart';
 import 'package:quick_chart/src/enums.dart';
 import 'package:quick_chart/src/extensions/double_extension.dart';
 
-
-
 class BarChartCustomPainter extends CustomPainter {
   Offset? touchPosition;
   double yLabelSpacing;
@@ -30,6 +28,7 @@ class BarChartCustomPainter extends CustomPainter {
   Color barColor;
   Color negativeBarColor;
   Color selectedBarColor;
+  double hLinesWeight;
   BarChartCustomPainter({
     required this.touchPosition,
     required this.yLabelSpacing,
@@ -43,9 +42,10 @@ class BarChartCustomPainter extends CustomPainter {
     required this.unit,
     required this.unitAlignment,
     this.yAxisLineCount = 6,
-    this.drawVerticalLines = false,
-    this.drawHorizontalLines = true,
+    required this.drawVerticalLines,
+    required this.drawHorizontalLines,
     required this.hLinesColor,
+    required this.hLinesWeight,
     required this.vLinesColor,
     required this.zeroLineColor,
     required this.yLabelStyle,
@@ -104,8 +104,10 @@ class BarChartCustomPainter extends CustomPainter {
     //--------------------------------------------------------------------------------------------
     // * DRAW BACKGROUND HORIZONTAL LINES AND Y LABELS
     //--------------------------------------------------------------------------------------------
-    Paint yLinePaint = Paint()..color = hLinesColor;
-    Paint zeroYLinePaint = Paint()..color = zeroLineColor;
+    Paint yLinePaint = Paint()..color = hLinesColor
+    ..strokeWidth = hLinesWeight;
+    Paint zeroYLinePaint = Paint()..color = zeroLineColor
+    ..strokeWidth = hLinesWeight;
     double? yTextWidth;
     // int yDiv = calYAxisDiv(yAxisMax);
     int yDiv = yAxisLineCount - 1;
