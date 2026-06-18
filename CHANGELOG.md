@@ -1,3 +1,7 @@
+## 0.0.
+
+- Added customization for Bar Chart horizontal lines width
+
 ## 0.0.3
 
 - Expose enums

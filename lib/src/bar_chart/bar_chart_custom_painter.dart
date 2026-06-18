@@ -28,7 +28,7 @@ class BarChartCustomPainter extends CustomPainter {
   Color barColor;
   Color negativeBarColor;
   Color selectedBarColor;
-  double hLinesWeight;
+  double hLinesWidth;
   BarChartCustomPainter({
     required this.touchPosition,
     required this.yLabelSpacing,
@@ -45,7 +45,7 @@ class BarChartCustomPainter extends CustomPainter {
     required this.drawVerticalLines,
     required this.drawHorizontalLines,
     required this.hLinesColor,
-    required this.hLinesWeight,
+    required this.hLinesWidth,
     required this.vLinesColor,
     required this.zeroLineColor,
     required this.yLabelStyle,
@@ -105,9 +105,9 @@ class BarChartCustomPainter extends CustomPainter {
     // * DRAW BACKGROUND HORIZONTAL LINES AND Y LABELS
     //--------------------------------------------------------------------------------------------
     Paint yLinePaint = Paint()..color = hLinesColor
-    ..strokeWidth = hLinesWeight;
+    ..strokeWidth = hLinesWidth;
     Paint zeroYLinePaint = Paint()..color = zeroLineColor
-    ..strokeWidth = hLinesWeight;
+    ..strokeWidth = hLinesWidth;
     double? yTextWidth;
     // int yDiv = calYAxisDiv(yAxisMax);
     int yDiv = yAxisLineCount - 1;

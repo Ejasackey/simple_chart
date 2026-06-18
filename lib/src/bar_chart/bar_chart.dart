@@ -146,7 +146,7 @@ class _BarChartState extends State<BarChart> {
             barColor: widget.barColor,
             negativeBarColor: widget.negativeBarColor,
             selectedBarColor: widget.selectedBarColor,
-            hLinesWeight: widget.hLineWidth,
+            hLinesWidth: widget.hLineWidth,
             drawHorizontalLines: widget.drawHLines,
             drawVerticalLines: widget.drawVLines,
           ),
