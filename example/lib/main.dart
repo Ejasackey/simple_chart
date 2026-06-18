@@ -43,12 +43,12 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: .all(12),
             margin: .symmetric(horizontal: 8),
             decoration: BoxDecoration(
-              color: Colors.green.withValues(alpha: .2),
+              color: Colors.green.withValues(alpha: .1),
               borderRadius: .circular(20),
             ),
             child: LineChart(
-              values: [20, 34, 2, -12, 43],
-              labels: ['MON', 'TUE', 'WED', 'THU', 'FRI'],
+              values: [4, 120, 12, 34, 43, 89, 21],
+              labels: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'],
               hLinesColor: Colors.grey.shade600,
               xLabelHeight: 20,
             ),
@@ -57,12 +57,12 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: .all(12),
             margin: .symmetric(horizontal: 8),
             decoration: BoxDecoration(
-              color: Colors.green.withValues(alpha: .2),
+              color: Colors.green.withValues(alpha: .1),
               borderRadius: .circular(20),
             ),
             child: BarChart(
-              values: [20, 34, 2, 54, -12, 43],
-              labels: ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'],
+              values: [4, 120, 12, 34, 43, 89, 21],
+              labels: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'],
             ),
           ),
         ],
